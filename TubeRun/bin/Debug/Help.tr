@@ -1,0 +1,17 @@
+﻿Welcome to TubeRun
+===================
+Before using TubeRun, please read the following notes:
+
+1. Departures and Line Statuses data are fetched from the website "www.tfl.gov.uk". Data availability it thus directly dependent upon this website's availability.
+
+2. The accuracy of the information provided is NOT GUARANTED and depends upon the accuracy of the Departure Board functionality of the website "www.tfl.gov.uk".
+
+3. Some stations do not currently provide Departures information. Before considering it a problem of the application, please check that the website "www.tfl.gov.uk" does indeed offer the departures information for the given combination of Line/ Station/ Platform.
+
+4. Every time that you press "Run"/"Reload" or a saved station, TubeRun uses your Internet connection to communicate with the aforementioned website. This communication may result in charges according to your carrier's data plan. Auto-update features provided in options also result in data transfers.
+
+5. If you find the departures information to be often off time, consider using the "Adjust departures board results" in the Options. It will remove 1 minute from all departure times making them more realistic.
+
+6. Train information for some stations mix data from different lines. As an example, consider some platforms in Circle Line that also serve the District Line. The results for both lines present train information for the other line.
+
+7. While viewing departures information for a station with multiple lines, you can scroll between lines by panning your finger vertically.

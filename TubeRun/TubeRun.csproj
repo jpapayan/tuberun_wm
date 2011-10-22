@@ -1,0 +1,277 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69882D7B-3A04-4AED-8851-31E87C1BACFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TubeRun</RootNamespace>
+    <AssemblyName>TubeRun</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>TubeRun</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>myicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="OpenNETCF, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Smart Device Framework\Bin\OpenNETCF.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Drawing, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Smart Device Framework\Bin\OpenNETCF.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeparturesN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeparturesN.Designer.cs">
+      <DependentUpon>FormDeparturesN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeparturesW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeparturesW.Designer.cs">
+      <DependentUpon>FormDeparturesW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFavoritesW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFavoritesW.Designer.cs">
+      <DependentUpon>FormFavoritesW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainW.Designer.cs">
+      <DependentUpon>FormMainW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaveW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaveW.Designer.cs">
+      <DependentUpon>FormSaveW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMap.Designer.cs">
+      <DependentUpon>FormMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memory.cs" />
+    <Compile Include="FormNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNotes.Designer.cs">
+      <DependentUpon>FormNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptions.Designer.cs">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaveN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaveN.Designer.cs">
+      <DependentUpon>FormSaveN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenFileDialogEx\BackKeyHandler.cs" />
+    <Compile Include="OpenFileDialogEx\MenuItemWithTag.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpenFileDialogEx\OpenFileDialogEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenFileDialogEx\OpenFileDialogEx.designer.cs">
+      <DependentUpon>OpenFileDialogEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenFileDialogEx\Platform.cs" />
+    <Compile Include="OpenFileDialogEx\ShellIconCache.cs" />
+    <Compile Include="SingleInstance.cs" />
+    <Compile Include="Toolbox.cs" />
+    <Compile Include="Fetcher.cs" />
+    <Compile Include="FormMainN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainN.Designer.cs">
+      <DependentUpon>FormMainN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFavoritesN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFavoritesN.Designer.cs">
+      <DependentUpon>FormFavoritesN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProblems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProblems.Designer.cs">
+      <DependentUpon>FormProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFavoritesN.resx">
+      <DependentUpon>FormFavoritesN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainN.resx">
+      <DependentUpon>FormMainN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Help.tr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\down.png" />
+    <None Include="images\empty.png" />
+    <Content Include="images\im1.png" />
+    <Content Include="images\im2.png" />
+    <Content Include="images\im3.png" />
+    <None Include="images\left.png" />
+    <None Include="images\next.png" />
+    <None Include="images\next_sel.png" />
+    <None Include="images\previous.png" />
+    <None Include="images\right.png" />
+    <None Include="images\previous_sel.png" />
+    <None Include="images\up.png" />
+    <None Include="images\lower.png" />
+    <None Include="images\upper.png" />
+    <Content Include="myicon.ico" />
+    <Content Include="tubemap.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormDeparturesN.resx">
+      <DependentUpon>FormDeparturesN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeparturesW.resx">
+      <DependentUpon>FormDeparturesW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFavoritesW.resx">
+      <DependentUpon>FormFavoritesW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainW.resx">
+      <DependentUpon>FormMainW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNotes.resx">
+      <DependentUpon>FormNotes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptions.resx">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProblems.resx">
+      <DependentUpon>FormProblems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaveN.resx">
+      <DependentUpon>FormSaveN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaveW.resx">
+      <DependentUpon>FormSaveW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMap.resx">
+      <DependentUpon>FormMap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenFileDialogEx\OpenFileDialogEx.resx">
+      <DependentUpon>OpenFileDialogEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statuses.tr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
